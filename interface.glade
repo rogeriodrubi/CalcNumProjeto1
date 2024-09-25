@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Método Numérico</property>
+    <child>
+      <object class="GtkBox">
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Intervalo [a, b]:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkBox">
+            <property name="orientation">horizontal</property>
+            <child>
+              <object class="GtkEntry" id="entry_a">
+                <property name="placeholder-text">a</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_b">
+                <property name="placeholder-text">b</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Tolerância:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_tol">
+            <property name="placeholder-text">0.001</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">Máximo de Iterações:</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_iter">
+            <property name="placeholder-text">100</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_calcular">
+            <property name="label">Calcular</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_resultado">
+            <property name="label">Resultado aparecerá aqui</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
